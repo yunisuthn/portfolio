@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>portofilio</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/bootstrap/js//bootstrap.min.js">
+    <link rel="stylesheet" href="assets/bootstrap/js//bootstrap.min.js">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg #f25752" id = "accueil">
+        <a class="navbar-brand" href="">photos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#accueil">Accueil <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#competence">Compétences</a>
+            <a class="nav-item nav-link" href="#formation">Formations</a>
+            <a class="nav-item nav-link" href="#projet">Projets</a>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row acc" >
+            <div class="col-md-6">
+                <img src="img/images.jpeg" alt="">
+            </div>
+            <div class="col-md-6">
+                <h3>BIENVENU SUR MON PORTFOLIO</h3>
+                <div>Je suis en quatrième année en informatique et en même
+                  temps de suivre le cours de SAYNA pour améliorer, avoir des
+                  compétences et avoir des expériences dans le monde
+                  informatique.
+                  Je suis totalement passionnée par le monde du
+                  développement informatique et j’ai l’espoir d’être intégrée
+                  dans une équipe d’informatique dans une société.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row " id="competence"  >
+            <!---h3>MES COMPETENCES : </h3>
+            <div class="slider">
+                <ul id="slider-list">
+                   <li>
+                     slide1
+                       <img src="img/export.png">
+                   </li>
+                   <li>
+                     slide2
+                       <img src="img/images.jpeg">
+                   </li>
+                   <li>
+                     silde3
+                       <img src="img/pc.jpeg">
+                   </li>
+                </ul>
+              </div-->
+<div class="container ">
+              
+<h2 style="text-align:center">MES COMPETENCES :</h2>
+
+    <div class="row " style="text-align: center">
+  <div class="mySlides">
+    <div class="numbertext">nodejs</div>
+    <a href="https://nodejs.org/">
+      <img src="img/node.png" style="width:100%">
+    </a>
+    
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">reactjs</div>
+    
+    <a href="https://fr.reactjs.org/">
+      <img src="img/react.jpeg" style="width:100%">
+    </a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">php</div>
+    <a href="https://www.php.net/">
+      <img src="img/php.png" style="width:100%">
+    </a>
+  </div>
+    
+  <div class="mySlides">
+      <div class="numbertext">mongodb</div>
+      <a href="https://www.mongodb.com/">
+        <img src="img/mongodb.png" style="width:100%">
+      </a>
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">SQL</div>
+      <a href="https://www.mysql.com/fr/">
+        <img src="img/sql.png" style="width:100%">
+      </a>
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">bootstrap</div>
+      <a href="https://getbootstrap.com/">
+        <img src="img/bootstrap.jpeg" style="width:100%">
+      </a>
+    </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+  <!---div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/export.png" style="width:100%" onclick="currentSlide(1)" alt="nodejs">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/images.jpeg" style="width:100%" onclick="currentSlide(2)" alt="reactjs">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/pc.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/export.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/images.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/pc.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+  </div>-->
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+    </div>
+
+    <div class="container"  id ="formation">
+        <h2 style="text-align:center">MES FORMATIONS :</h2>
+        <div class="row format" >
+            <div class="col-md-6">
+                <img src="img/images.jpeg" alt="">
+            </div>
+            <div class="col-md-6">
+                <div>Baccalauréat – série D
+                   Lycée HR Daniel Ambohipanja Ilafy | 2012</div>
+                   <div>Informatique à Centre National du Télé-Enseignement
+                    (CNTEMAD)
+                    ▪ Première année à troisième année | 2013 – 2016
+                    ▪ Quatrième année | 2018 – En cours</div>
+                    <div>
+                    Développement Web – SAYNA SIMPLON MADAGASCAR
+▪ Développeur Fullstack JavaScript | 28 Janvier 2019 – Juillet 2019</div>
+            </div>
+        </div>
+    </div>
+
+  <div class="container ">
+                
+<h2 style="text-align:center">MES PROJETS:</h2>
+      <div class="row " id="projet"  >
+          <div class="col-md-6">
+              <img width="500px" height="300px" src="img/export.png" alt="">
+          </div>
+          <div class="col-md-6">
+              <div>
+                <a href="https://examenyunisuthn.herokuapp.com/">
+                cuisine
+              </a>
+              </div>
+          </div>
+      </div>
+    </div>
+        <!-- Footer -->
+    <footer class="footer" >
+
+        <!-- Copyright -->
+        <div class=" text-center py-3">© 2018 Copyright:
+          <a href=""> RAZANAKINIAINA Onisoa Tahina</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+    
+</body>
+</html>
