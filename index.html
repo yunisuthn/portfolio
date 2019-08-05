@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>portofilio</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/bootstrap/js//bootstrap.min.js">
-    <link rel="stylesheet" href="assets/bootstrap/js//bootstrap.min.js">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/js//bootstrap.min.js">
+    <link rel="stylesheet" href="bootstrap/js//bootstrap.min.js">
+    <link rel="stylesheet" href="style.css">
+            
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg #f25752" id = "accueil">
@@ -29,7 +32,7 @@
     <div class="container">
         <div class="row acc" >
             <div class="col-md-6">
-                <img src="img/images.jpeg" alt="">
+                <img src="img/ony.jpg" alt="" width="300px">
             </div>
             <div class="col-md-6">
                 <h3>BIENVENU SUR MON PORTFOLIO</h3>
@@ -44,149 +47,42 @@
         </div>
     </div>
 
-    <div class="row " id="competence"  >
-            <!---h3>MES COMPETENCES : </h3>
-            <div class="slider">
-                <ul id="slider-list">
-                   <li>
-                     slide1
-                       <img src="img/export.png">
-                   </li>
-                   <li>
-                     slide2
-                       <img src="img/images.jpeg">
-                   </li>
-                   <li>
-                     silde3
-                       <img src="img/pc.jpeg">
-                   </li>
-                </ul>
-              </div-->
-<div class="container ">
-              
-<h2 style="text-align:center">MES COMPETENCES :</h2>
-
-    <div class="row " style="text-align: center">
-  <div class="mySlides">
-    <div class="numbertext">nodejs</div>
-    <a href="https://nodejs.org/">
-      <img src="img/node.png" style="width:100%">
-    </a>
-    
+    <div class="container"  id ="competence">
+      <h2 style="text-align:center">MES COMPETENCES :</h2>
+      <div class="row format" >
+          <div class="col-md-6">
+              <img src="img/react.jpeg" alt="">
+          </div>
+          <div class="col-md-6">
+                  <ul>
+                  <li>PHP</li>
+                  <li>codeigniter</li>
+                  <li>symfony</li>
+                  <li>JavaScript</li>
+                  <li>reactjs</li>
+                  <li>nodejs</li>
+                  <li>html</li>
+                  <li>css</li>
+                  <li>java</li>
+                  </ul>
+          </div>
+      </div>
   </div>
-
-  <div class="mySlides">
-    <div class="numbertext">reactjs</div>
-    
-    <a href="https://fr.reactjs.org/">
-      <img src="img/react.jpeg" style="width:100%">
-    </a>
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">php</div>
-    <a href="https://www.php.net/">
-      <img src="img/php.png" style="width:100%">
-    </a>
-  </div>
-    
-  <div class="mySlides">
-      <div class="numbertext">mongodb</div>
-      <a href="https://www.mongodb.com/">
-        <img src="img/mongodb.png" style="width:100%">
-      </a>
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">SQL</div>
-      <a href="https://www.mysql.com/fr/">
-        <img src="img/sql.png" style="width:100%">
-      </a>
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">bootstrap</div>
-      <a href="https://getbootstrap.com/">
-        <img src="img/bootstrap.jpeg" style="width:100%">
-      </a>
-    </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-
-
-  <!---div class="row">
-    <div class="column">
-      <img class="demo cursor" src="img/export.png" style="width:100%" onclick="currentSlide(1)" alt="nodejs">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/images.jpeg" style="width:100%" onclick="currentSlide(2)" alt="reactjs">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/pc.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/export.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/images.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/pc.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-  </div>-->
-</div>
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-    
-    </div>
-
     <div class="container"  id ="formation">
         <h2 style="text-align:center">MES FORMATIONS :</h2>
         <div class="row format" >
             <div class="col-md-6">
-                <img src="img/images.jpeg" alt="">
+                <img src="img/sayna.png" alt="">
             </div>
             <div class="col-md-6">
-                <div>Baccalauréat – série D
-                   Lycée HR Daniel Ambohipanja Ilafy | 2012</div>
-                   <div>Informatique à Centre National du Télé-Enseignement
-                    (CNTEMAD)
-                    ▪ Première année à troisième année | 2013 – 2016
-                    ▪ Quatrième année | 2018 – En cours</div>
-                    <div>
-                    Développement Web – SAYNA SIMPLON MADAGASCAR
-▪ Développeur Fullstack JavaScript | 28 Janvier 2019 – Juillet 2019</div>
+                    <ul>
+                    <li>Baccalauréat – série D
+                      Lycée HR Daniel Ambohipanja Ilafy | 2012</li>
+                    <li> Informatique à Centre National du Télé-Enseignement
+                      (CNTEMAD) <br> Première année à troisième année | 2013 – 2016 
+                      <br> Quatrième année | 2018 – En cours </li>
+                    <li> Développeur Fullstack JavaScript simplon | 28 Janvier 2019 – Juillet 2019 </li>
+                    </ul>
             </div>
         </div>
     </div>
@@ -195,23 +91,32 @@ function showSlides(n) {
                 
 <h2 style="text-align:center">MES PROJETS:</h2>
       <div class="row " id="projet"  >
-          <div class="col-md-6">
-              <img width="500px" height="300px" src="img/export.png" alt="">
-          </div>
-          <div class="col-md-6">
-              <div>
-                <a href="https://examenyunisuthn.herokuapp.com/">
-                cuisine
-              </a>
-              </div>
-          </div>
+        <a style="text-align:center"  href="https://examenyunisuthn.herokuapp.com/">
+            <img width="500px" height="300px" src="img/export.png" alt="">
+        
+        </a>
       </div>
-    </div>
         <!-- Footer -->
     <footer class="footer" >
+      <div class="container">
+          <div class="row">
+          <div class="col-md-4">
+            <a style="text-align:center"  href="https://github.com/yunisuthn">
+              mon github <br>
+              <img width="100px" height="50px" src="img/github.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a style="text-align:center"  href="https://www.linkedin.com/in/onisoa-tahina-razanakiniaina-171ab017b/">
+            mon linkedin<br>
+            <img width="100px" height="50px" src="img/linkedin.jpg" alt="">
+            </a>
+          </div>
 
+        </div>
+      </div>
         <!-- Copyright -->
-        <div class=" text-center py-3">© 2018 Copyright:
+        <div class=" text-center py-3">© 2019 Copyright:
           <a href=""> RAZANAKINIAINA Onisoa Tahina</a>
         </div>
         <!-- Copyright -->
